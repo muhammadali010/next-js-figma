@@ -14,8 +14,8 @@ function Page() {
   style={{
     backgroundImage: "url('/bg1.png')",
     backgroundSize: 'cover',
-    backgroundPosition: 'center center',
-    backgroundRepeat: 'no-repeat', 
+    backgroundPosition: 'center center', // Ekranning o'rtasiga moslashadi
+    backgroundRepeat: 'no-repeat', // Tasvir qaytarilmasligi uchun
   }}
   className="w-full min-h-screen"
 >
