@@ -10,57 +10,61 @@ const roboto = Roboto({
 function Page() {
   return (
     <div className={`${roboto.className} container mx-auto`}>
-      <div
-        style={{
-          backgroundImage: "url('/bg1.png')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-        className="w-full h-screen"
-      >
-        <div className="flex items-center justify-between text-white px-14 py-6">
-          <h1 className="logo text-3xl font-bold">MNTN</h1>
-          <div className="flex gap-6">
-            <p className="cursor-pointer hover:underline">Equipment</p>
-            <p className="cursor-pointer hover:underline">About us</p>
-            <p className="cursor-pointer hover:underline">About</p>
-          </div>
-          <h2 className="account text-xl font-medium">Account</h2>
-        </div>
-        <div className="ml-[350px] mt-40">
-          <h2 className="hiking text-[#FBD784] text-lg">--A Hiking guide</h2>
-          <h1 className="mountain text-white text-5xl font-bold leading-tight">
-            Be prepared for the <br /> Mountains and beyond!
-          </h1>
-          <p className="mt-10 text-white text-lg">scroll down</p>
-        </div>
-      </div>
+ <div
+  style={{
+    backgroundImage: "url('/bg1.png')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat', 
+  }}
+  className="w-full min-h-screen"
+>
+  <div className="flex items-center justify-between text-white px-14 py-6">
+    <h1 className="logo text-3xl font-bold">MNTN</h1>
+    <div className="flex gap-6">
+      <p className="cursor-pointer hover:underline">Equipment</p>
+      <p className="cursor-pointer hover:underline">About us</p>
+      <p className="cursor-pointer hover:underline">About</p>
+    </div>
+    <h2 className="account text-xl font-medium">Account</h2>
+  </div>
+  <div className="ml-[350px] mt-40">
+    <h2 className="hiking text-[#FBD784] text-lg">--A Hiking guide</h2>
+    <h1 className="mountain text-white text-5xl font-bold leading-tight">
+      Be prepared for the <br /> Mountains and beyond!
+    </h1>
+    <p className="mt-10 text-white text-lg">scroll down</p>
+  </div>
+</div>
 
-      <div
-        style={{
-          backgroundImage: "url('/bg2.png')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-        className="w-full h-[80vh]"
-      >
-        <Image
-          className="mx-auto pt-20"
-          src="/bg3.png"
-          alt="Background"
-          width={1920}
-          height={926}
-        />
-      </div>
+<div
+  style={{
+    backgroundImage: "url('/bg2.png')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat',
+  }}
+  className="w-full h-[80vh] flex items-center justify-center"
+>
+  <Image
+    className="mx-auto pt-20"
+    src="/bg3.png"
+    alt="Background"
+    width={1920}
+    height={926}
+  />
+</div>
 
-      <div
-        style={{
-          backgroundImage: "url('/bg4.png')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-        className="w-full h-[50vh]"
-      ></div>
+<div
+  style={{
+    backgroundImage: "url('/bg4.png')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat',
+  }}
+  className="w-full h-[50vh]"
+></div>
+
 
       <div className="bg-[#0b1d26] text-white py-16 px-6">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
